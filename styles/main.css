@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header .header-top {
+  background-color: white;
+  width: 100%;
+}
+.header .header-top .top-info {
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.header .header-top .top-info .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .header-top .top-info .logo .logo-text span:first-child {
+  color: blue;
+}
+.header .header-top .top-info .logo .logo-text span:last-child {
+  color: gray;
+}
+.header .header-top .top-info .social-icons {
+  display: flex;
+}
+.header .header-top .top-info .social-icons li {
+  list-style: none;
+  margin-left: 30px;
+  font-size: 15px;
+}
+.header .header-top .top-info .social-icons li a {
+  list-style: none;
+  color: black;
+}
+.header .header-bottom {
+  background-color: rgb(243, 247, 249);
+}
+.header .header-bottom .bottom-info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header-bottom .bottom-info ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.header .header-bottom .bottom-info ul li {
+  list-style: none;
+  margin-left: 20px;
+  align-items: center;
+}
+.header .header-bottom .bottom-info ul li:hover a {
+  background-color: blue;
+  color: white;
+}
+.header .header-bottom .bottom-info ul li.active a {
+  background-color: blue;
+  color: white;
+}
+.header .header-bottom .bottom-info ul li a {
+  text-transform: capitalize;
+  transition: 0.3s;
+  padding: 30px 12px;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+.header .header-bottom .bottom-info .ticket-button {
+  margin-left: 20px;
+  background-color: blue;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+}/*# sourceMappingURL=main.css.map */
