@@ -19,6 +19,9 @@
                             <span class="fs-6">Avqust 25, 2018 - Miami Marina Bay</span>
                         </div>
                     </div>
+                    <div class="hamburger-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                     <ul class="social-icons">
                         <li><a href="#"><i class="fa fa-pinterest" ></i></a></li>
                         <li><a href="#"><i class="fa fa-facebook" ></i></a></li>
@@ -52,7 +55,50 @@
                 </div>
             </div>
         </div>
+
+        <div class="navbar-mobile">
+                <div class="mark-button">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="logo">
+                    <img src="./assets/images/logo.png.webp" alt="">
+                    <div class="logo-text">
+                        <span class="fs-2">Confrans</span> <br>
+                        <span class="fs-6">Avqust 25, 2018 - Miami Marina Bay</span>
+                    </div>
+
+                </div>
+                <ul >
+                    <li class="active"><a href="#">home</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">speakers</a></li>
+                    <li><a href="#">events</a></li>
+                    <li><a href="#">news</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa fa-pinterest" ></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook" ></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" ></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble" ></i></a></li>
+                    <li><a href="#"><i class="fa fa-behance" ></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin" ></i></a></li>
+                </ul>
+        </div>
     </header>
     <script src="https://kit.fontawesome.com/7ef1703760.js" crossorigin="anonymous"></script>
+    <script>
+        const hamburgerIcon = document.querySelector('.hamburger-icon');
+        const navbarMobile = document.querySelector('.navbar-mobile');
+        const markButton = document.querySelector('.mark-button');
+        hamburgerIcon.addEventListener('click', function() {
+            navbarMobile.classList.add('show');
+        });
+
+        markButton.addEventListener('click', function(){
+            navbarMobile.classList.remove('show');
+        });
+    </script>
 </body>
 </html>
